@@ -1,0 +1,211 @@
+/* Color variables */
+$black: #232323;
+$red-light: #f5ab9e;
+$red-dark: #8c3a2b;
+$gray-light: #f5f5ff;
+$gray-dark: #eef;
+$orange-light: #DC2E13;
+$orange-dark: #C22911;
+
+/* Misc variables */
+$space-sm: 10px;
+$space-md: 12px;
+$padding-base: 6px 12px;
+$font-size: 18px;
+$icon-side: 25px;
+$icon-padding: 5px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: $font-size;
+	line-height: 1.6;
+	color: $black;
+	
+	.app-container {
+			max-width: 1100px;
+			width: 100%;
+		}
+}
+
+ul, ol {
+	text-align: left;
+	margin-bottom: $space-sm;
+}
+
+pre {
+	background-color: $gray-light;
+	border: 1px solid $gray-dark;
+	padding: $padding-base;
+}
+
+label {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input, select {
+	padding: $padding-base;
+	border-style: groove;
+	border-radius: 4px;
+	font-size: $font-size;
+	margin-bottom: $space-sm;
+
+	&.search {
+		margin: 0 $space-sm;
+	}
+}
+
+input[type="text"]:not(.search) {
+	width: 100%;
+}
+
+.users-list {
+	max-height: 350px;
+	overflow-y: scroll;
+	border: 1px solid $black;
+	margin-bottom: $space-md;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+	border-color: $gray-dark;
+
+	&.header-row {
+		height: 50px;
+
+		th {
+			width: 50px;
+		}
+	}
+
+	&:not(.header-row) {
+		border: solid thin;
+		border-left: 0;
+		border-right: 0;
+		height: 100px;
+	}
+
+	&.table-row-display ol {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&:nth-of-type(odd) {
+		background-color: $gray-light;
+	}
+
+	&:last-of-type {
+		border-bottom: 0;
+	}
+}
+
+td {
+	text-align: center;
+
+	&.data {
+		width: 110px;
+		max-width: 110px;
+		text-align: left;
+
+		.text-container {
+			padding: $padding-base;
+		}
+
+		input[type="text"] {
+			max-width: 125px;
+		}
+	}
+
+	&.tasklists {
+		.tasklist-title {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		.tasklists-list > li {
+			padding-right: $space-sm;
+		}
+
+		.task-complete {
+			text-decoration: line-through;
+		}
+
+		.add-task-text {
+			margin: -$space-sm 0 $space-sm;
+			cursor: pointer;
+		}
+
+		ol.tasks .delete {
+			float: right;
+		}
+	}
+}
+
+form {
+	.error {
+		background-color: $red-light;
+		color: $red-dark;
+		border: 1px solid $red-dark;
+		padding: $padding-base;
+		margin-bottom: $space-md;
+	}
+
+	.form-group {
+		margin-bottom: 4px;
+	}
+
+	div:last-of-type {
+		margin-bottom: $space-md;
+	}
+}
+
+.btn {
+	padding: $padding-base;
+	display: block;
+	background-color: #e6e6e6;
+	border: 1px solid #adadad;
+	width: 100%;
+	font-size: $font-size;
+	margin-bottom: $space-md;
+	cursor: pointer;
+
+	&.btn-primary {
+		background-color: $orange-light;
+		border: 1px solid $orange-dark;
+		color: #fff;
+	}
+}
+
+.icon {
+	border-radius: 50%;
+	height: $icon-side;
+	width: $icon-side;
+	padding: $icon-padding;
+	line-height: $icon-side - ($icon-padding * 2);
+	font-size: $icon-side - ($icon-padding * 2);
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+
+	&.add {
+		background-color: #4285F4;
+		color: #fff;
+	}
+
+	&.delete {
+		background-color: $red-light;
+		color: $red-dark;
+		border-color: $red-dark;
+	}
+}

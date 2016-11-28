@@ -1,0 +1,7 @@
+[
+	{ "name": "Foo", "address": "1234 Foo Rd", "dob": "10-10-1010", "tasklists": [{ "title": "Life goals", "tasks": [{ "text": "Take out the trash"}, { "text": "Walk the dog" }, { "text": "Learn how to tie a tie" }] }, { "title": "Todo before Christmas", "tasks": [{ "text": "Buy presents" }, { "text": "Buy fruitcake" }, { "text": "Buy mulled wine" }] }] },
+	{ "name": "Bar", "address": "5678 Bar St", "dob": "01-01-0101", "tasklists": [{ "title": "Todo in the next hour", "tasks": [{ "text": "Organize sock drawer" }, { "text": "Clean the litterbox" }] }] },
+	{ "name": "Baz", "address": "9012 Baz Blvd", "dob": "01-01-2000", "tasklists": [] },
+	{ "name": "Bat", "address": "3456 Bat Dr", "dob": "10-10-2000", "tasklists": [{ "title": "Bucket list", "tasks": [{ "text": "Finish this todo list" }, { "text": "Bench press 1000 lbs" }, { "text": "Study JavaScript design patterns" }] }, { "title": "Superhero todo", "tasks": [{ "text": "Get cape" }, { "text": "Wear cape" }, { "text": "Fly" }] }] },
+	{ "name": "Quux", "address": "7890 Quux Ave", "dob": "01-01-2010", "tasklists": [{ "title": "What to do after work", "tasks": [{ "text": "Go for a jog" }] }] }
+]			
